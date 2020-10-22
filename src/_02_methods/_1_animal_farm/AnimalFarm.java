@@ -16,7 +16,7 @@ public class AnimalFarm {
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	boolean canPlaySounds = true;
+	boolean canPlaySounds = false;
 
 	
 	public static void main(String[] args) {
@@ -28,7 +28,18 @@ public class AnimalFarm {
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
+			String animal = JOptionPane.showInputDialog("What animal do you want?");
+			if(animal.equals("cat")) {
+				meow();
+			} else if(animal.equals("cow")) {
+				moo();
+			} else if(animal.equals("dog")) {
+				woof();
+			} else if(animal.equals("duck")) {
+				quack();
+			} else if(animal.equals("llama")) {
+				llamaScream();
+			}
 		/* 2. Make it so that the user can keep entering new animals. */
 
 	}
