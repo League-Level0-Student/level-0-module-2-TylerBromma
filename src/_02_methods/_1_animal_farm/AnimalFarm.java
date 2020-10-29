@@ -47,26 +47,31 @@ public class AnimalFarm {
 	void moo() {
 		playNoise(mooFile);
 		showImage(cowIcon);
+		animals();
 	}
 
 	void quack() {
 		playNoise(quackFile);
 		showImage(duckIcon);
+		animals();
 	}
 
 	void woof() {
 		playNoise(woofFile);
 		showImage(dogIcon);
+		animals();
 	}
 	
 	void meow() {
 		playNoise(meowFile);
 		showImage(catIcon);
+		animals();
 	}
 	
 	void llamaScream() {
 		playNoise(llamaFile);
 		showImage(llamaIcon);
+		animals();
 	}
 	
 
